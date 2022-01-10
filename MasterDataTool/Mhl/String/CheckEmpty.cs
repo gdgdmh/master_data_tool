@@ -9,7 +9,7 @@ namespace Mhl.String
 	/// <summary>
 	/// 空文字列をチェックする
 	/// </summary>
-	public class CheckStringEmpty
+	public class CheckEmpty
 	{
 		/// <summary>
 		/// 空文字列か

@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace NUnitTestProject.Mhl.String
 {
-	public class TestCheckStringEmpty
+	public class TestCheckEmpty
 	{
 		[SetUp]
 		public void Setup()
@@ -15,7 +15,7 @@ namespace NUnitTestProject.Mhl.String
 		[Test]
 		public void TestEmptyStringTrue()
 		{
-			global::Mhl.String.CheckStringEmpty check = new global::Mhl.String.CheckStringEmpty();
+			global::Mhl.String.CheckEmpty check = new global::Mhl.String.CheckEmpty();
 			string str = new string("");
 			Assert.IsTrue(check.IsEmpty(str));
 		}
@@ -26,7 +26,7 @@ namespace NUnitTestProject.Mhl.String
 		[Test]
 		public void TestNullTrue()
 		{
-			global::Mhl.String.CheckStringEmpty check = new global::Mhl.String.CheckStringEmpty();
+			global::Mhl.String.CheckEmpty check = new global::Mhl.String.CheckEmpty();
 			string str = null;
 			Assert.IsTrue(check.IsEmpty(str));
 		}
@@ -37,7 +37,7 @@ namespace NUnitTestProject.Mhl.String
 		[Test]
 		public void TestAbcFalse()
 		{
-			global::Mhl.String.CheckStringEmpty check = new global::Mhl.String.CheckStringEmpty();
+			global::Mhl.String.CheckEmpty check = new global::Mhl.String.CheckEmpty();
 			string str = new string("Abc");
 			Assert.IsFalse(check.IsEmpty(str));
 		}

@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mhl\String\CheckStringEmpty.cs" />
+    <Compile Include="Mhl\String\CheckEmpty.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
