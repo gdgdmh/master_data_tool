@@ -1,8 +1,8 @@
 using NUnit.Framework;
 
-namespace NUnitTestProject
+namespace NUnitTestProject.Mhl.String
 {
-	public class TestCheckStringEmpty
+	public class TestCheckEmpty
 	{
 		[SetUp]
 		public void Setup()
@@ -15,7 +15,7 @@ namespace NUnitTestProject
 		[Test]
 		public void TestEmptyStringTrue()
 		{
-			MasterDataTool.CheckStringEmpty check = new MasterDataTool.CheckStringEmpty();
+			global::Mhl.String.CheckEmpty check = new global::Mhl.String.CheckEmpty();
 			string str = new string("");
 			Assert.IsTrue(check.IsEmpty(str));
 		}
@@ -26,7 +26,7 @@ namespace NUnitTestProject
 		[Test]
 		public void TestNullTrue()
 		{
-			MasterDataTool.CheckStringEmpty check = new MasterDataTool.CheckStringEmpty();
+			global::Mhl.String.CheckEmpty check = new global::Mhl.String.CheckEmpty();
 			string str = null;
 			Assert.IsTrue(check.IsEmpty(str));
 		}
@@ -37,7 +37,7 @@ namespace NUnitTestProject
 		[Test]
 		public void TestAbcFalse()
 		{
-			MasterDataTool.CheckStringEmpty check = new MasterDataTool.CheckStringEmpty();
+			global::Mhl.String.CheckEmpty check = new global::Mhl.String.CheckEmpty();
 			string str = new string("Abc");
 			Assert.IsFalse(check.IsEmpty(str));
 		}

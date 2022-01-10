@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MasterDataTool
+namespace Mhl.String
 {
 	/// <summary>
 	/// 空文字列をチェックする
 	/// </summary>
-	public class CheckStringEmpty
+	public class CheckEmpty
 	{
 		/// <summary>
 		/// 空文字列か
@@ -18,7 +18,7 @@ namespace MasterDataTool
 		/// <returns>空文字列もしくはnullならtrue そうでなければfalse</returns>
 		public bool IsEmpty(string str)
 		{
-			return String.IsNullOrEmpty(str);
+			return System.String.IsNullOrEmpty(str);
 		}
 	}
 }
